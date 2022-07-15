@@ -24,7 +24,6 @@ import struct
 import argparse
 import traceback
 
-
 def exception_response(e):
 	exc_type, exc_value, exc_traceback = sys.exc_info()
 	lines = traceback.format_exception(exc_type, exc_value, exc_traceback)
@@ -132,3 +131,4 @@ if __name__ == '__main__':
 		sys.exit('mergevec requires an output filename. Call mergevec.py with -o your_output_filename')
 
 	merge_vec_files(vec_directory, output_filename)
+#Testing
